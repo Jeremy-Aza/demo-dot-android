@@ -1,0 +1,7 @@
+[*.{kt,kts}]
+ij_kotlin_allow_trailing_comma = true
+ij_kotlin_allow_trailing_comma_on_call_site = true
+ktlint_code_style = android_studio
+ktlint_standard_enum-wrapping = disabled
+ktlint_standard_function-signature = disabled
+max_line_length = off

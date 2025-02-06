@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.innovatrics.dot.samples.HomeFragment"
+        android:label="@string/navigation_destination_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_BasicDocumentAutoCaptureFragment"
+            app:destination="@id/BasicDocumentAutoCaptureFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_BasicFaceAutoCaptureFragment"
+            app:destination="@id/BasicFaceAutoCaptureFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_BasicSmileLivenessFragment"
+            app:destination="@id/BasicSmileLivenessFragment" />
+
+        <action
+            android:id="@+id/action_HomeFragment_to_BasicMagnifEyeLivenessFragment"
+            app:destination="@id/BasicMagnifEyeLivenessFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/BasicDocumentAutoCaptureFragment"
+        android:name="com.innovatrics.dot.samples.documentautocapture.BasicDocumentAutoCaptureFragment"
+        android:label="@string/navigation_destination_document_auto_capture"
+        tools:layout="@layout/fragment_document_auto_capture">
+
+        <action
+            android:id="@+id/action_BasicDocumentAutoCaptureFragment_to_DocumentAutoCaptureResultFragment"
+            app:destination="@id/DocumentAutoCaptureResultFragment"
+            app:popUpTo="@id/HomeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/DocumentAutoCaptureResultFragment"
+        android:name="com.innovatrics.dot.samples.documentautocapture.DocumentAutoCaptureResultFragment"
+        android:label="@string/navigation_destination_document_auto_capture"
+        tools:layout="@layout/fragment_document_auto_capture_result" />
+
+    <fragment
+        android:id="@+id/BasicFaceAutoCaptureFragment"
+        android:name="com.innovatrics.dot.samples.faceautocapture.BasicFaceAutoCaptureFragment"
+        android:label="@string/navigation_destination_face_auto_capture"
+        tools:layout="@layout/dot_face_fragment_face_auto_capture">
+
+        <action
+            android:id="@+id/action_BasicFaceAutoCaptureFragment_to_FaceAutoCaptureResultFragment"
+            app:destination="@id/FaceAutoCaptureResultFragment"
+            app:popUpTo="@id/HomeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/FaceAutoCaptureResultFragment"
+        android:name="com.innovatrics.dot.samples.faceautocapture.FaceAutoCaptureResultFragment"
+        android:label="@string/navigation_destination_face_auto_capture"
+        tools:layout="@layout/fragment_face_auto_capture_result" />
+
+    <fragment
+        android:id="@+id/BasicSmileLivenessFragment"
+        android:name="com.innovatrics.dot.samples.smileliveness.BasicSmileLivenessFragment"
+        android:label="@string/navigation_destination_smile_liveness"
+        tools:layout="@layout/dot_face_fragment_smile_liveness">
+
+        <action
+            android:id="@+id/action_BasicSmileLivenessFragment_to_SmileLivenessResultFragment"
+            app:destination="@id/SmileLivenessResultFragment"
+            app:popUpTo="@id/HomeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SmileLivenessResultFragment"
+        android:name="com.innovatrics.dot.samples.smileliveness.SmileLivenessResultFragment"
+        android:label="@string/navigation_destination_smile_liveness"
+        tools:layout="@layout/fragment_smile_liveness_result" />
+
+    <fragment
+        android:id="@+id/BasicMagnifEyeLivenessFragment"
+        android:name="com.innovatrics.dot.samples.magnifeyeliveness.BasicMagnifEyeLivenessFragment"
+        android:label="@string/navigation_destination_magnifeye_liveness"
+        tools:layout="@layout/dot_face_fragment_magnifeye_liveness">
+
+        <action
+            android:id="@+id/action_BasicMagnifEyeLivenessFragment_to_MagnifEyeLivenessResultFragment"
+            app:destination="@id/MagnifEyeLivenessResultFragment"
+            app:popUpTo="@id/HomeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/MagnifEyeLivenessResultFragment"
+        android:name="com.innovatrics.dot.samples.magnifeyeliveness.MagnifEyeLivenessResultFragment"
+        android:label="@string/navigation_destination_magnifeye_liveness"
+        tools:layout="@layout/fragment_magnifeye_liveness_result" />
+
+</navigation>
