@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.innovatrics.dot.samples"
+    namespace = "com.example.autocapture"
     compileSdk = 34
 
     defaultConfig {

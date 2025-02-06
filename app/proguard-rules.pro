@@ -33,5 +33,5 @@
 -keep class com.innovatrics.dot.mrz.element.Element { *; }
 -keep class com.innovatrics.dot.mrz.element.ElementWithCheckDigit { *; }
 -keep class com.innovatrics.dot.mrz.element.NameElement { *; }
--keep class com.innovatrics.dot.samples.documentautocapture.DocumentAutoCaptureResult { *; }
--keep class com.innovatrics.dot.samples.faceautocapture.FaceAutoCaptureResult { *; }
+-keep class com.example.autocapture.documentautocapture.DocumentAutoCaptureResult { *; }
+-keep class com.example.autocapture.faceautocapture.FaceAutoCaptureResult { *; }
